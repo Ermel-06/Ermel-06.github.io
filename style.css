@@ -1,0 +1,86 @@
+body {
+    background: radial-gradient(circle at center, #2D1B55, #0B011B);
+    font-family: 'Manrope', serif;
+    color: aliceblue;
+
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    margin: 20px;
+    height: 80px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    margin-right: 1rem;
+    color: #666777;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #333344;
+    text-decoration: underline;
+}
+
+#Home {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+    padding: 1.5rem;
+    color: aliceblue;
+}
+
+.offcanvas#offcanvasNavbar,
+.offcanvas.offcanvas-fullscreen#offcanvasNavbar {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 1rem;
+    color: aliceblue;
+    overflow-y: auto;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+}
+
+#offcanvasNavbar .nav-link:hover {
+    color: #dfefff;
+}
+
+.row .col-6 a i {
+    color: #00D4FF;
+    font-size: 3rem;
+}
+
+.row .col-6 a i:hover {
+    color: #4AF3FF;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.col-12 .card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+    padding: 1.5rem;
+    color: aliceblue;
+
+}

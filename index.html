@@ -4,48 +4,117 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Ermel-06</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
 </head>
 
 <body>
-    <nav class="navbar bg-dark" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
-            <div class="col-6">
-                <a class="navbar-brand text-light fw-bolder fs-1 p-5" href="#">ERMEL</a>
-            </div>
-            <div class="col-6">
-
+            <a class="navbar-brand me-auto ps-3 text-primary" href="#Home">Ermel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end offcanvas-fullscreen" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Ermel</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg- active text-white" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2 text-white" href="#Activities">Activities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2 text-white" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
-
     <div class="container mt-5">
         <br><br><br>
         <div class="row">
-            <div class="col-7">
-                <p class="fs-1 fw-bold">I am Ermel,
+            <div id="Home" class="col-12 col-lg-7">
+                <p  class="fs-1 fw-bold mt-5">I am Ermel,
                     <br>
                     an IT Student
                 </p>
                 <p class="fs-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus totam quod corrupti
                     maxime blanditiis incidunt velit necessitatibus, ab praesentium asperiores modi nemo quis voluptates
                     aspernatur eius aut commodi cumque dicta!</p>
-                <button type="button" class="btn btn-primary mt-5 p-3">Button button</button>
+                <div class="row">
+                    <div class="col-6 d-flex gap-5">
+                        <a href="https://github.com/Ermel-06">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="https://www.facebook.com/ermeljohn.corpus">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ermel_john/">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="col-5">
+            <div class="col-12 col-lg-5">
                 <div class="text-center">
                     <img src="/images/Ermel.jpg" class="img-fluid rounded-circle" alt="Profile Picture"
-                        style="object-fit: cover; width: 300px; height: 300px;">
+                        style="object-fit: cover;">
                 </div>
             </div>
         </div>
     </div>  
-
+    <div class="container mt-5">
+        <div class="row">
+            <div id="Activities" class="col text-center fs-2 fw-bold mb-5">
+                Activities
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 d-flex justify-content-center">
+                <div class="card w-100" style="width: 18rem;">
+                    <img src="images/Samsung.png" class="card-img-top" alt="Samsung Galaxy A12">
+                    <div class="card-body">
+                        <h5 class="card-title">Samsung Galaxy A12</h5>
+                        <p class="card-text">Looks as Good as it Feels</p>
+                        <a href="https://ermel-06.github.io/SAMSUNG-Galaxy-A12/" class="btn btn-primary">View Site</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 d-flex justify-content-center ">
+                <div class="card w-100" style="width: 18rem;">
+                    <img src="images/ChocolateHills.png" class="card-img-top" alt="Chocolate Hills">
+                    <div class="card-body">
+                        <h5 class="card-title">Chocolate Hills</h5>
+                        <p class="card-text">Bohol's Crown of Wonders</p>
+                        <a href="https://ermel-06.github.io/Chocolate-Hills/" class="btn btn-primary">View Site</a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <footer class="text-center text-white py-5">
+        <p class="mb-0">&copy; 2025 Ermel-06. All Rights Reserved.</p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
-        </script>
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
